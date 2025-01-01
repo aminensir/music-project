@@ -114,6 +114,58 @@ class _ArtistsScreenState extends State<ArtistsScreen> {
         title: Text('Mon Album des Chanteurs'),
         backgroundColor: colorProvider.selectedColor,
       ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: colorProvider.selectedColor,
+              ),
+              child: Text(
+                'Artistes',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListView.builder(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              itemCount: _artists.length,
+              itemBuilder: (context, index) {
+                final artist = _artists[index];
+                return ListTile(
+                  leading: ClipOval(
+                    child: Image.asset(
+                      'images/${artist.image}',
+                      height: 40,
+                      width: 40,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  title: Text(
+                    artist.name,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: colorProvider.selectedColor,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(
+                      context,
+                      '/songs',
+                      arguments: artist.id,
+                    );
+                  },
+                );
+              },
+            ),
+          ],
+        ),
+      ),
       body: _artists.isEmpty
           ? Center(child: CircularProgressIndicator())
           : GridView.builder(
