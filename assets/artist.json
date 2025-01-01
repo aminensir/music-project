@@ -1,0 +1,52 @@
+[
+    {
+      "id": "1",
+      "name": "Ed Sheeran",
+      "image": "artist1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Adele",
+      "image": "artist2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Taylor Swift",
+      "image": "artist3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Bruno Mars",
+      "image": "artist4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Beyoncé",
+      "image": "artist5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Justin Bieber",
+      "image": "artist6.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Rihanna",
+      "image": "artist7.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Katy Perry",
+      "image": "artist8.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Drake",
+      "image": "artist9.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Lady Gaga",
+      "image": "artist10.jpg"
+    }
+  ]
